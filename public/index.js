@@ -238,7 +238,7 @@ class Session {
     const bookingIndex = Number(bookingID.split('-T')[1]);
     const bookingName = this.bookings[bookingIndex];
 
-    if (!confirm(`Задача '${bookingName}' будет удалена. Продолжить?`)) return;
+    if (!confirm(`Бронь на фильм '${this.movieTitle}' на фамилию '${bookingName}' будет удалена. Продолжить?`)) return;
 
     const sessionId = Number(this.msID.split('MS')[1]);
     try {
